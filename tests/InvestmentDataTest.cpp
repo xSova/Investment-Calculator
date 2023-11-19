@@ -5,7 +5,11 @@
 #include <gtest/gtest.h>
 #include "InvestmentData.h"
 
-// Test for the constructor
+// Test for the constructors
+TEST(InvestmentDataTest, ConstructorNullTest) {
+    InvestmentData investmentDataTest();
+    EXPECT_TRUE(investmentDataTest().getYears() == 0);
+}
 TEST(InvestmentDataTest, ConstructorTest) {
 InvestmentData data(1000.0, 50.0, 5.0, 10);
 EXPECT_DOUBLE_EQ(1000.0, data.getInitialAmount());

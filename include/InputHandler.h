@@ -9,6 +9,7 @@
 
 class InputHandler {
 public:
+
     // Gets a double value from the user. 'prompt' is the message shown to the user.
     static double getDoubleInput(const std::string& t_prompt);
 

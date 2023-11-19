@@ -7,19 +7,27 @@
 
 #include "InvestmentData.h"
 
+// The Investment class is responsible for performing calculations related to investments,
+// such as calculating growth with or without monthly deposits.
 class Investment {
 public:
+    // Constructor that initializes an Investment object with given investment data.
     Investment(InvestmentData t_data);
 
+    // Calculates the growth of the investment over time without considering any additional monthly deposits.
     void calculateWithoutMonthlyDeposit();
+
+    // Calculates the growth of the investment over time including additional monthly deposits.
     void calculateWithMonthlyDeposit();
 
+    // Retrieves the investment data including calculations such as balances and interest.
     InvestmentData getInvestmentData() const;
 
 private:
-    InvestmentData m_data; // Encapsulates all investment-related data
+    InvestmentData m_data; // This member variable holds all the investment-related data, like the initial amount, interest rate, etc.
 };
 
 #endif // INVESTMENT_H
+
 
 

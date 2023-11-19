@@ -3,3 +3,4 @@
 //
 
 #include <gtest/gtest.h>
+#include "../include/InputHandler.h"
