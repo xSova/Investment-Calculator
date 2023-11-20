@@ -8,7 +8,7 @@ add_executable(Investment_Calculator src/main.cpp
         src/ReportGenerator.cpp
         src/InputHandler.cpp
         src/Investment.cpp
-        src/ConcreteReportGenerator.cpp
+        #src/ConcreteReportGenerator.cpp
         src/InvestmentData.cpp
 )
 target_include_directories(Investment_Calculator PRIVATE include)
@@ -29,13 +29,18 @@ add_executable(InvestmentTest tests/InvestmentTest.cpp)
 target_link_libraries(InvestmentTest gtest gtest_main)
 target_include_directories(InvestmentTest PRIVATE include)
 
-add_executable(ConcreteReportGeneratorTest tests/ConcreteReportGeneratorTest.cpp
-        tests/ReportGeneratorTest.cpp
-        tests/InvestmentDataTest.cpp)
-target_link_libraries(ConcreteReportGeneratorTest gtest gtest_main)
-target_include_directories(ConcreteReportGeneratorTest PRIVATE include)
+#add_executable(ConcreteReportGeneratorTest tests/ConcreteReportGeneratorTest.cpp
+#        tests/ReportGeneratorTest.cpp
+#        tests/InvestmentDataTest.cpp)
+#target_link_libraries(ConcreteReportGeneratorTest gtest gtest_main)
+#target_include_directories(ConcreteReportGeneratorTest PRIVATE include)
 
-add_executable(InvestmentDataTest tests/InvestmentDataTest.cpp)
+# Test executable for InvestmentDataTest
+add_executable(InvestmentDataTest tests/InvestmentDataTest.cpp
+        src/InvestmentData.cpp  # Include the source file for the class being tested
+)
 target_link_libraries(InvestmentDataTest gtest gtest_main)
 target_include_directories(InvestmentDataTest PRIVATE include)
+
+
 

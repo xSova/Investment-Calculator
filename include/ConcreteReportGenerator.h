@@ -6,6 +6,7 @@
 #define CONCRETEREPORTGENERATOR_H
 
 #include "ReportGenerator.h"
+#include <iostream>
 
 class ConcreteReportGenerator : public ReportGenerator {
 public:

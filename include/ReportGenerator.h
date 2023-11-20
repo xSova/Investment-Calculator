@@ -6,6 +6,7 @@
 #define REPORTGENERATOR_H
 
 #include "InvestmentData.h"
+#include <iostream>
 
 class ReportGenerator {
 public:
