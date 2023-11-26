@@ -12,7 +12,7 @@
 class Investment {
 public:
     // Constructor that initializes an Investment object with given investment data.
-    Investment(InvestmentData t_data);
+    explicit Investment(InvestmentData t_data);
 
     // Calculates the growth of the investment over time without considering any additional monthly deposits.
     void calculateWithoutMonthlyDeposit();
@@ -21,7 +21,7 @@ public:
     void calculateWithMonthlyDeposit();
 
     // Retrieves the investment data including calculations such as balances and interest.
-    InvestmentData getInvestmentData() const;
+    [[nodiscard]] InvestmentData getInvestmentData() const;
 
 private:
     InvestmentData m_data; // This member variable holds all the investment-related data, like the initial amount, interest rate, etc.

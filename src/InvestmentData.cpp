@@ -8,8 +8,7 @@ InvestmentData::InvestmentData() : m_initialAmount(0.0), m_monthlyDeposit(0.0), 
 m_yearlyBalances(0, 0.0), m_yearlyInterests(0, 0.0) {}
 
 InvestmentData::InvestmentData(double t_initialAmount, double t_monthlyDeposit, double t_annualInterest, int t_years)
-: m_initialAmount(t_initialAmount), m_monthlyDeposit(t_monthlyDeposit), m_annualInterest(t_annualInterest), m_years(t_years),
-m_yearlyBalances(t_years, 0.0), m_yearlyInterests(t_years, 0.0) {}
+: m_initialAmount(t_initialAmount), m_monthlyDeposit(t_monthlyDeposit), m_annualInterest(t_annualInterest), m_years(t_years) {}
 
 
 // Setters.

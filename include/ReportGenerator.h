@@ -6,7 +6,7 @@
 #define REPORTGENERATOR_H
 
 #include "InvestmentData.h"
-#include <iostream>
+
 
 class ReportGenerator {
 public:
@@ -14,7 +14,7 @@ public:
     virtual void generateReport(const InvestmentData& t_data) = 0;
 
     // Virtual destructor for safe polymorphic use.
-    virtual ~ReportGenerator() {}
+    virtual ~ReportGenerator() = default;
 };
 
 #endif // REPORTGENERATOR_H

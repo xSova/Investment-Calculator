@@ -2,10 +2,14 @@
 // Created by Bryce Schultz on 11/19/23.
 //
 
+#include <utility>
+
 #include "../include/Investment.h"
 
+#include <iostream>
+
 Investment::Investment(InvestmentData t_data) {
-    this->m_data = t_data;
+    this->m_data = std::move(t_data);
 }
 
 void Investment::calculateWithoutMonthlyDeposit() {
@@ -13,22 +17,20 @@ void Investment::calculateWithoutMonthlyDeposit() {
     double annualInterestRate = m_data.getAnnualInterest();
     int years = m_data.getYears();
     int months = years * 12;
+    double accruedInterest = 0.0;
 
-    // Interest calculated monthly but is stored on an annual basis.
     for (int month = 1; month <= months; ++month) {
-        double total = openingAmount;
-        double monthlyInterest = total * (annualInterestRate / 100.0 / 12.0);
-        double closingBalance = total + monthlyInterest;
+        double monthlyInterest = openingAmount * (annualInterestRate / 100.0 / 12.0);
+        accruedInterest += monthlyInterest;
+        openingAmount += monthlyInterest;
 
-        // Add yearly data if a year completes.
         if (month % 12 == 0) {
-            m_data.addYearlyData(closingBalance, monthlyInterest * 12);
+            m_data.addYearlyData(openingAmount, accruedInterest);
+            accruedInterest = 0.0; // Reset accrued interest for the next year
         }
-
-        // Update opening amount for next month.
-        openingAmount = closingBalance;
     }
 }
+
 
 void Investment::calculateWithMonthlyDeposit() {
     double openingAmount = m_data.getInitialAmount();
@@ -36,20 +38,20 @@ void Investment::calculateWithMonthlyDeposit() {
     double annualInterestRate = m_data.getAnnualInterest();
     int years = m_data.getYears();
     int months = years * 12;
+    double accruedInterest = 0.0;
 
     for (int month = 1; month <= months; ++month) {
-        double total = openingAmount + monthlyDeposit;
-        double monthlyInterest = total * (annualInterestRate / 100.0 / 12.0);
-        double closingBalance = total + monthlyInterest;
+        openingAmount += monthlyDeposit;
+        double monthlyInterest = openingAmount * (annualInterestRate / 100.0 / 12.0);
+        accruedInterest += monthlyInterest;
+        openingAmount += monthlyInterest;
 
-        // Add yearly data if a year completes.
         if (month % 12 == 0) {
-            m_data.addYearlyData(closingBalance, monthlyInterest * 12);
+            m_data.addYearlyData(openingAmount, accruedInterest);
+            accruedInterest = 0.0; // Reset accrued interest for the next year
         }
-
-        // Update opening amount for next month.
-        openingAmount = closingBalance;
     }
 }
+
 
 InvestmentData Investment::getInvestmentData() const { return m_data; }

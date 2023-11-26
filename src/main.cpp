@@ -5,10 +5,10 @@
 
 int main() {
     // Step 1: Gather inputs
-    double initialAmount = InputHandler::getDoubleInput("Enter initial investment amount: ");
-    double monthlyDeposit = InputHandler::getDoubleInput("Enter monthly deposit: ");
-    double annualInterest = InputHandler::getDoubleInput("Enter annual interest rate (%): ");
-    int years = InputHandler::getIntInput("Enter number of years: ");
+    const double initialAmount = InputHandler::getDoubleInput("Enter initial investment amount: ");
+    const double monthlyDeposit = InputHandler::getDoubleInput("Enter monthly deposit: ");
+    const double annualInterest = InputHandler::getDoubleInput("Enter annual interest rate (%): ");
+    const int years = InputHandler::getIntInput("Enter number of years: ");
 
     // Step 2: Create InvestmentData
     InvestmentData investmentData(initialAmount, monthlyDeposit, annualInterest, years);

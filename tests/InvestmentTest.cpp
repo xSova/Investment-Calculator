@@ -6,7 +6,7 @@
 #include "../include/Investment.h"
 
 TEST(InvestmentTest, CalculateWithoutMonthlyDeposit) {
-    InvestmentData data(1000.0, 0.0, 5.0, 1); // Initial amount, monthly deposit, annual interest, years
+    InvestmentData data(1.0, 0.0, 5.0, 5); // Initial amount, monthly deposit, annual interest, years
     Investment investment(data);
 
     investment.calculateWithoutMonthlyDeposit();
@@ -16,12 +16,12 @@ TEST(InvestmentTest, CalculateWithoutMonthlyDeposit) {
     auto yearlyBalances = result.getYearlyBalances();
     auto yearlyInterests = result.getYearlyInterests();
 
-    EXPECT_NEAR(yearlyBalances.back(), 1050.0, 0.01); // Example expected value
-    EXPECT_NEAR(yearlyInterests.back(), 50.0, 0.01);  // Example expected value
+    EXPECT_NEAR(yearlyBalances.back(), 1.28, 0.01); // Example expected value
+    EXPECT_NEAR(yearlyInterests.back(), 0.06, 0.01);  // Example expected value
 }
 
 TEST(InvestmentTest, CalculateWithMonthlyDeposit) {
-    InvestmentData data(1000.0, 100.0, 5.0, 1); // Initial amount, monthly deposit, annual interest, years
+    InvestmentData data( 1.0, 50.0, 5.0, 5); // Initial amount, monthly deposit, annual interest, years
     Investment investment(data);
 
     investment.calculateWithMonthlyDeposit();
@@ -31,6 +31,6 @@ TEST(InvestmentTest, CalculateWithMonthlyDeposit) {
     auto yearlyInterests = result.getYearlyInterests();
 
     // Example expected values based on specific calculation
-    EXPECT_NEAR(yearlyBalances.back(), 2200.0, 0.01); // Example expected value
-    EXPECT_NEAR(yearlyInterests.back(), 100.0, 0.01);  // Example expected value
+    EXPECT_NEAR(yearlyBalances.back(), 3415.76, 0.01); // Example expected value
+    EXPECT_NEAR(yearlyInterests.back(), 152.75, 0.01);  // Example expected value
 }

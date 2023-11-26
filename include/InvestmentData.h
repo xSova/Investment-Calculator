@@ -21,19 +21,19 @@ public:
     void setYears(int t_investmentYears);
 
     // Getters
-    double getInitialAmount() const;
-    double getMonthlyDeposit() const;
-    double getAnnualInterest() const;
-    int getYears() const;
+    [[nodiscard]] double getInitialAmount() const;
+    [[nodiscard]] double getMonthlyDeposit() const;
+    [[nodiscard]] double getAnnualInterest() const;
+    [[nodiscard]] int getYears() const;
 
     // Manages and updates the yearly balance and interest data.
     void addYearlyData(double t_yearEndBalance, double t_yearEndInterest);
 
     // Retrieves the yearly balance data.
-    std::vector<double> getYearlyBalances() const;
+    [[nodiscard]] std::vector<double> getYearlyBalances() const;
 
     // Retrieves the yearly interest data.
-    std::vector<double> getYearlyInterests() const;
+    [[nodiscard]] std::vector<double> getYearlyInterests() const;
 
 private:
     double m_initialAmount; // The initial amount of the investment.

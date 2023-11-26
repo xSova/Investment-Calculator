@@ -6,12 +6,12 @@
 #define CONCRETEREPORTGENERATOR_H
 
 #include "ReportGenerator.h"
-#include <iostream>
 
-class ConcreteReportGenerator : public ReportGenerator {
+class ConcreteReportGenerator final : public ReportGenerator {
 public:
     // Implements the report generation as defined in ReportGenerator.
     void generateReport(const InvestmentData& t_data) override;
+    ~ConcreteReportGenerator() override = default;
 };
 
 #endif // CONCRETEREPORTGENERATOR_H

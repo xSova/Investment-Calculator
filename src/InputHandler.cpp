@@ -18,7 +18,7 @@ using namespace std;
         } else {
             cin.clear(); // Clear the error flag.
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore the invalid input.
-            cout << "Invalid input. Please enter a valid number." << endl;
+            cout << "Invalid input. Please enter a valid double." << endl;
         }
     }
 
