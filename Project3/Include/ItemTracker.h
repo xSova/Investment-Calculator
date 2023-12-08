@@ -2,6 +2,9 @@
 // Created by Bryce Schultz on 12/6/23.
 //
 
+#include "string"
+#include "map"
+
 #ifndef PROJECT3_ITEMTRACKER_H
 #define PROJECT3_ITEMTRACKER_H
 

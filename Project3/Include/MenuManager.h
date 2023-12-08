@@ -6,7 +6,7 @@
 #include "FileWriter.h"
 #include "FileReader.h"
 #include "Interface.h"
-#include "ItemTracker.h"
+
 
 #ifndef PROJECT3_MENUMANAGER_H
 #define PROJECT3_MENUMANAGER_H
@@ -17,10 +17,16 @@ class MenuManager {
 private:
     ItemTracker tracker;
     Interface interface;
-    FileReader fileReader;
-    FileWriter fileWriter;
     InputHandler inputHandler;
+    std::string wordToSearch;
 public:
     void initialSetup();
-    void displayMenuAndHandleChoice();
+
+    [[noreturn]] void displayMenuAndHandleChoice();
+    void handleUserChoice(int choice);
+    void handleItemSearch();
+    void handleDisplayAllItems();
+    void handleDisplayHistogram();
+    void handleExit();
+    void handleInvalidOption();
 };

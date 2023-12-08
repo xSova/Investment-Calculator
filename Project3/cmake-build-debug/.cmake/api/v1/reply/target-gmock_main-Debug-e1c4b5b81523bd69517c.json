@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgmock_maind.a"
+			"path" : "lib/libgmock_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -17,7 +17,8 @@
 			"install",
 			"install_project",
 			"target_link_libraries",
-			"include_directories"
+			"include_directories",
+			"target_compile_features"
 		],
 		"files" : 
 		[
@@ -32,44 +33,50 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 103,
+				"line" : 100,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 202,
+				"line" : 205,
 				"parent" : 1
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 150,
+				"line" : 152,
 				"parent" : 2
 			},
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 121,
+				"line" : 120,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 332,
+				"line" : 316,
 				"parent" : 4
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 104,
+				"line" : 101,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 79,
+				"line" : 75,
 				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 192,
+				"parent" : 2
 			}
 		]
 	},
@@ -79,10 +86,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=c++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics"
+					"fragment" : "-g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics"
 				},
 				{
-					"fragment" : "-Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls"
+					"fragment" : " -DGTEST_HAS_PTHREAD=1  "
 				}
 			],
 			"includes" : 
@@ -113,9 +120,9 @@
 			{
 				"backtraces" : 
 				[
-					3
+					8
 				],
-				"standard" : "11"
+				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[
@@ -150,7 +157,7 @@
 		}
 	},
 	"name" : "gmock_main",
-	"nameOnDisk" : "libgmock_maind.a",
+	"nameOnDisk" : "libgmock_main.a",
 	"paths" : 
 	{
 		"build" : "_deps/googletest-build/googlemock",
