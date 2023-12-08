@@ -1,0 +1,22 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/bryceschultz/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Darwin - 23.1.0 - arm64
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/bryceschultz/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Darwin - 23.1.0 - arm64
+...

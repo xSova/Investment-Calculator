@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee276961-9c07-42b2-99df-2b8661390946" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Structure.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tests/ItemTrackerTest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-f4a274e237370f9aab8f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-bfa8deb35cdccf2305f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fd37f9d48d6fcfe930ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googlemock-Debug-31a54d377b384cc38fbe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googletest-Debug-a091d3d4c1720dfc82ff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2023-12-07T21-26-13-0268.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-Project3-Debug-a6c26704329a55801287.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gmock-Debug-4c0ba9733d7e33bad97e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gmock_main-Debug-e1c4b5b81523bd69517c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-c0f178113a644b9dc614.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gtest_main-Debug-c70e513dd74b10840c7f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-project3_tests-Debug-695ca6eca5fdc89f4455.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/Project3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cmake-build-debug/frequencies.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Include/FileReader.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Include/FileReader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Include/FileWriter.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Include/FileWriter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Include/InputHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Include/InputHandler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Include/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Include/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Include/ItemTracker.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Include/ItemTracker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Include/MenuManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Include/MenuManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileReader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FileReader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileWriter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FileWriter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InputHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItemTracker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ItemTracker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MenuManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tests/FileReaderTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Tests/FileReaderTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tests/ItemTracker.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cache-v2-8130597df52464a7bccd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-2bfdec57dcfb98845130.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-65c8dae42af15491ec43.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googlemock-Debug-580c728af02f90d33d8e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googletest-Debug-1761e9a0527e87a4050c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/index-2023-12-06T07-26-30-0307.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-Project3-Debug-2b7ea486b5b5e71cdba4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gmock-Debug-21aac7e064424685ff31.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gmock_main-Debug-5b65d14799b9af43c59d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-54d82b34e7aa7b574fbf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-gtest_main-Debug-afd2de7838b29b5833a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/.cmake/api/v1/reply/target-your_test_name-Debug-bedd67274994f2c1e791.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googlemock/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-debug.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-debug.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googletest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/_deps/googletest-build/googletest/cmake_install.cmake" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="2.2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2ZFPSqgJGYGAtL2KsiA9wIgaUX3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee276961-9c07-42b2-99df-2b8661390946" name="Changes" comment="" />
+      <created>1702014856791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702014856791</updated>
+      <workItem from="1702014858364" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
